@@ -1,0 +1,22 @@
+{
+  "name": "puppeteer_demo",
+  "version": "1.0.0",
+  "description": "trying automation with puppeteer",
+  "main": "main.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha --timeout=30000 ./tests",
+    "start_local": "CHROME_BIN='/Users/bmiric/Documents/repos/coverwallet/cw-node-carrier-portal-scrapper/node_modules/puppeteer/.local-chromium/mac-706915/chrome-mac/Chromium.app' | PUPPETEER_EXECUTABLE_PATH='/Users/bmiric/Documents/repos/coverwallet/cw-node-carrier-portal-scrapper/node_modules/puppeteer/.local-chromium/mac-706915/chrome-mac/Chromium.app' | node main.js",
+    "start": "node main.js"
+  },
+  "keywords": [
+    "puppeteer",
+    "automation"
+  ],
+  "author": "Us",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.10",
+    "express": "^4.17.1",
+    "puppeteer": "^2.0.0"
+  }
+}
